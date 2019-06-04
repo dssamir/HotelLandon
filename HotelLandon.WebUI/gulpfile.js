@@ -11,7 +11,7 @@ gulp.task("sass", function () {
 });
 gulp.task("minify-css", function () {
     return gulp.src(["wwwroot/css/*.css", "!wwwroot/css/*.min.css"])
-        .pipe(rename({ extname: "min.css" }))
+        .pipe(rename({ extname: ".min.css" }))
         .pipe(csso())
         .pipe(gulp.dest("wwwroot/css"));
 });

@@ -2,14 +2,15 @@
 $hoverlink: #00ff21;
 
 body {
-    > p{
-        color:$red;
+    > p, div {
+        color: $red;
     }
-    a{
-        color:$red;
 
-        &:hover{
-            color:$hoverlink;
+    a {
+        color: $red;
+
+        &:hover {
+            color: $hoverlink;
         }
     }
 }

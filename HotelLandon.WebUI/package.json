@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   },
   "description": ""

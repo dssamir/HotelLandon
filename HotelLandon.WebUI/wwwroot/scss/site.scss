@@ -1,0 +1,15 @@
+﻿$red: #0FF;
+$hoverlink: #00ff21;
+
+body {
+    > p{
+        color:$red;
+    }
+    a{
+        color:$red;
+
+        &:hover{
+            color:$hoverlink;
+        }
+    }
+}

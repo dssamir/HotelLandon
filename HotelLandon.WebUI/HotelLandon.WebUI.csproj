@@ -19,4 +19,10 @@
     <ProjectReference Include="..\HotelLandon.Models\HotelLandon.Models.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
 </Project>

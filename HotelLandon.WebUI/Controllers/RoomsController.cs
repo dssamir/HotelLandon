@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using HotelLandon.Data;
+using HotelLandon.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelLandon.WebUI.Controllers
@@ -14,7 +15,8 @@ namespace HotelLandon.WebUI.Controllers
             => _context = context;
         public IActionResult Index()
         {
-            return View(_context.Rooms.ToList());
+            var rooms = _context.Rooms.Select(a => (RoomViewModel)a);
+            return View(new List<RoomViewModel>(rooms));
         }
     }
 }

@@ -53,12 +53,14 @@ namespace HotelLandon.WebUI
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Rooms}/{action=Index}/{id?}");
+            //});
+
+            app.UseMvcWithDefaultRoute();
         }
     }
 }

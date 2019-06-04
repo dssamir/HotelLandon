@@ -8,7 +8,7 @@ namespace Patterns.DependencyInjection
     public class SingletonBasic<T> where T : new()
     {
         private static T _instance;
-        private static object toto;
+        private static readonly object toto = new object();
 
         public static T Instance
         {
